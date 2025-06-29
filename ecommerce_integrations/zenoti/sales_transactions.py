@@ -126,7 +126,7 @@ def validate_details(invoice, center, error_logs):
 
 	warehouse = center.get("erpnext_warehouse")
 	if not warehouse:
-		err_msg = _("Center {0} is not linked to any ERPNext Warehouse.").format(
+		err_msg = _("Center {0} is not linked to any TaskforgeHQ Warehouse.").format(
 			frappe.bold(center.get("center_name"))
 		)
 		make_error_log_msg(invoice, err_msg, error_logs)

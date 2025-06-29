@@ -24,7 +24,7 @@
    "fieldname": "erpnext_warehouse",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "ERPNext Warehouse",
+   "label": "TaskforgeHQ Warehouse",
    "options": "Warehouse",
    "reqd": 1
   },

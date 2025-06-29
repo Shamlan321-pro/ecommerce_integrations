@@ -143,7 +143,7 @@ class UnicommerceSettings(SettingController):
 			)
 
 	def get_erpnext_warehouses(self, all_wh=False) -> list[ERPNextWarehouse]:
-		"""Get list of configured ERPNext warehouses.
+		"""Get list of configured TaskforgeHQ warehouses.
 
 		all_wh flag ignores enabled status.
 		"""
@@ -164,7 +164,7 @@ class UnicommerceSettings(SettingController):
 	def get_integration_to_erpnext_wh_mapping(
 		self, all_wh=False
 	) -> dict[IntegrationWarehouse, ERPNextWarehouse]:
-		"""Get enabled mapping from Unicommerce facility to ERPNext warehouse.
+		"""Get enabled mapping from Unicommerce facility to TaskforgeHQ warehouse.
 
 		all_wh flag ignores enabled status."""
 		reverse_map = self.get_erpnext_to_integration_wh_mapping(all_wh=all_wh)

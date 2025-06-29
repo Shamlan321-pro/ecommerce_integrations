@@ -18,7 +18,7 @@ MAX_INVENTORY_UPDATE_IN_REQUEST = 1000
 
 
 def update_inventory_on_unicommerce(client=None, force=False):
-	"""Update ERPnext warehouse wise inventory to Unicommerce.
+	"""Update TaskforgeHQ warehouse wise inventory to Unicommerce.
 
 	This function gets called by scheduler every minute. The function
 	decides whether to run or not based on configured sync frequency.

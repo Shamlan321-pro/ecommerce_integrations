@@ -39,7 +39,7 @@ def make_list_for_entry(center, data, list_for_entry, error_logs):
 		if entry["total_quantity"] > 0:
 			warehouse = center.get("erpnext_warehouse")
 			if not warehouse:
-				err_msg = _("Center {0} is not linked to any ERPNext Warehouse.").format(
+				err_msg = _("Center {0} is not linked to any TaskforgeHQ Warehouse.").format(
 					frappe.bold(center.get("center_name"))
 				)
 				error_logs.append(err_msg)

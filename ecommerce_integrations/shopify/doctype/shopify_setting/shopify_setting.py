@@ -72,7 +72,7 @@ class ShopifySetting(SettingController):
 	def _validate_warehouse_links(self):
 		for wh_map in self.shopify_warehouse_mapping:
 			if not wh_map.erpnext_warehouse:
-				frappe.throw(_("ERPNext warehouse required in warehouse map table."))
+				frappe.throw(_("TaskforgeHQ warehouse required in warehouse map table."))
 
 	def _initalize_default_values(self):
 		if not self.last_inventory_sync:
@@ -82,7 +82,7 @@ class ShopifySetting(SettingController):
 	@connection.temp_shopify_session
 	def update_location_table(self):
 		"""Fetch locations from shopify and add it to child table so user can
-		map it with correct ERPNext warehouse."""
+		map it with correct TaskforgeHQ warehouse."""
 
 		self.shopify_warehouse_mapping = []
 		for locations in PaginatedIterator(Location.find()):

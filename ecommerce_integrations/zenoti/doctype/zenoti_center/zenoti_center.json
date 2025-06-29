@@ -59,7 +59,7 @@
   {
    "fieldname": "erpnext_warehouse",
    "fieldtype": "Link",
-   "label": "ERPNext Warehouse",
+   "label": "TaskforgeHQ Warehouse",
    "options": "Warehouse"
   },
   {
